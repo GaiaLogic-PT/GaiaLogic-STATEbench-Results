@@ -59,6 +59,28 @@ Both are evaluated identically: locked Azure `gpt-5.4` simulator + judge
 Per-domain tables and full compliance evidence are in [`REPORT.md`](REPORT.md) and
 in each submission's `SUBMISSION.md`.
 
+### Versus the verified Agent Learning Track leaderboard (v0.8.0)
+
+For context, the verified Agent Learning Track entries on the **same benchmark
+version (v0.8.0)** from the
+[public leaderboard](https://microsoft.github.io/STATE-Bench/leaderboard/?track=agent-learning),
+with ours beneath (as percentages for comparison):
+
+| System | Organization | pass@1 | pass^5 | UX | Status |
+|---|---|---|---|---|---|
+| GPT-5.4 + Foundry Memory | Microsoft Foundry | 54.5% | 33.6% | 3.75 | verified |
+| GPT-5.4, no memory (baseline) | OpenAI | 51.3% | 29.9% | 3.31 | verified |
+| **gaia-nano** (ours) | GaiaLogic | 64.0% | 39.3% | 3.71 | **not verified** |
+| **gaia-nano-v3** (ours) | GaiaLogic | 62.3% | 38.0% | 3.68 | **not verified** |
+
+On the same benchmark version our runs land above the verified entries, from a much
+smaller model. We hold that lightly: these are self-reported runs on the locked
+protocol and are **not yet verified by Microsoft** — a nano model topping a board
+built for heavy memory architectures is exactly the kind of claim that deserves an
+independent check. (Only same-version entries are compared; older v0.4.4 numbers run
+a different protocol. The strongest Main-Track model on v0.8.0, GPT-5.5 high, is at
+58.9% pass@1 for a wider bearing.)
+
 ## Compliance in one line
 
 No ground-truth labels, task descriptions, or any other task/environment field —

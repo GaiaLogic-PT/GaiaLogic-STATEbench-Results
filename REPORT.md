@@ -116,6 +116,33 @@ label-free nature of the learner.
 All agents run unpriced (`agent_pricing: null`), so reported cost/task is $0.00 in
 every `metrics.json`.
 
+### Comparison to the verified leaderboard (same benchmark version, v0.8.0)
+
+The verified Agent Learning Track entries on the same benchmark version (v0.8.0),
+from the
+[public leaderboard](https://microsoft.github.io/STATE-Bench/leaderboard/?track=agent-learning),
+with our two submissions beneath (percentages, macro average):
+
+| System | Organization | pass@1 | pass^5 | UX | Status |
+|---|---|---|---|---|---|
+| GPT-5.4 + Foundry Memory | Microsoft Foundry | 54.5% | 33.6% | 3.75 | verified |
+| GPT-5.4, no memory (baseline) | OpenAI | 51.3% | 29.9% | 3.31 | verified |
+| **gaia-nano** (ours) | GaiaLogic | 64.0% | 39.3% | 3.71 | **not verified** |
+| **gaia-nano-v3** (ours) | GaiaLogic | 62.3% | 38.0% | 3.68 | **not verified** |
+
+On the same version, both of our runs score above the verified entries — including
+a full-size GPT-5.4 with a dedicated memory system — from a much smaller model
+(`gpt-5.4-nano`) carrying only a frozen, human-readable rule set. We present this
+with deliberate caution: our numbers are **self-reported on the locked protocol and
+not yet verified by Microsoft**, and a result of this shape warrants independent
+scrutiny before it is taken as established. Only same-version entries are compared
+here; the older v0.4.4 leaderboard numbers (e.g. GPT-5.1 + Foundry Memory at 58.3%)
+run a different evaluation protocol and are not directly comparable. As a wider
+bearing, the strongest Main-Track model on v0.8.0 (GPT-5.5, high reasoning) sits at
+58.9% pass@1. Even taken at face value, the pass^5 figures (~38–39%) show that the
+agent still fails at least one of five runs on the majority of tasks — there is
+substantial headroom left.
+
 ## 4. Method (summary)
 
 1. **Compliance-by-construction input boundary.** All learning signal flows
