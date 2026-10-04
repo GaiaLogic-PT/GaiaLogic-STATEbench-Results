@@ -19,6 +19,8 @@ source code used to produce the results — see
 ```
 README.md                       <- this file
 REPORT.md                       <- full report: what it is, method, results, compliance
+blog/
+  gaia-nano-statebench.md       <- plain-language write-up of what we did and how it scored
 submissions/
   gaia-nano/                    <- primary submission (label-free, test-adapted at design level)
     outputs.zip                 <- 3 domains x 50 test tasks x 5 runs = 750 scored trajectories + metrics.json
