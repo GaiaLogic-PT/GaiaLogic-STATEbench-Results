@@ -134,7 +134,7 @@ tasks of ten the strict measure still misses.
 - **Full submissions, scored trajectories, and compliance documents:**
   [GaiaLogic-STATEbench-Results](https://github.com/GaiaLogic-PT/GaiaLogic-STATEbench-Results)
 - **Our official submission thread (open, unverified):**
-  [microsoft/STATE-Bench · issue #48](https://github.com/microsoft/STATE-Bench/issues/48)
+  [microsoft/STATE-Bench · issue #51](https://github.com/microsoft/STATE-Bench/issues/51)
 - **The benchmark itself:**
   [microsoft/STATE-Bench](https://github.com/microsoft/STATE-Bench)
 
