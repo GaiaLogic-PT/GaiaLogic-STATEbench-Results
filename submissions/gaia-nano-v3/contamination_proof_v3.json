@@ -1,0 +1,111 @@
+{
+  "artifact": "compliant_forge_v3",
+  "judge_used": false,
+  "domains": {
+    "customer_support": {
+      "n_fit": 69,
+      "n_dev": 31,
+      "n_test": 50,
+      "n_covered_unique": 55,
+      "covered_not_in_fit": [],
+      "covered_intersect_test": [],
+      "fit_intersect_test": [],
+      "dev_intersect_test": [],
+      "fit_intersect_dev": [],
+      "cs_caveat_leak_in_dev": [],
+      "provenance": {
+        "learner": "compliant_forge",
+        "input_boundary": "datasets/train_task_trajectories/ only (conversation + tool calls)",
+        "ground_truth_used": false,
+        "labels_used": false,
+        "extraction": "deterministic (no LLM); policy branches surfaced from get_policies env docs",
+        "n_train_demos": 69,
+        "n_families": 7,
+        "split": "train_fit only (dev held out)",
+        "n_train_fit_demos": 69,
+        "artifact": "compliant_forge_v3"
+      },
+      "checks": {
+        "covered_subset_of_fit": true,
+        "covered_intersect_test_zero": true,
+        "fit_intersect_test_zero": true,
+        "dev_intersect_test_zero": true,
+        "fit_intersect_dev_zero": true,
+        "cs_caveat_not_in_dev": true,
+        "provenance_clean": true
+      },
+      "PASS": true
+    },
+    "travel": {
+      "n_fit": 70,
+      "n_dev": 30,
+      "n_test": 50,
+      "n_covered_unique": 53,
+      "covered_not_in_fit": [],
+      "covered_intersect_test": [],
+      "fit_intersect_test": [],
+      "dev_intersect_test": [],
+      "fit_intersect_dev": [],
+      "cs_caveat_leak_in_dev": [],
+      "provenance": {
+        "learner": "compliant_forge",
+        "input_boundary": "datasets/train_task_trajectories/ only (conversation + tool calls)",
+        "ground_truth_used": false,
+        "labels_used": false,
+        "extraction": "deterministic (no LLM); policy branches surfaced from get_policies env docs",
+        "n_train_demos": 70,
+        "n_families": 7,
+        "split": "train_fit only (dev held out)",
+        "n_train_fit_demos": 70,
+        "artifact": "compliant_forge_v3"
+      },
+      "checks": {
+        "covered_subset_of_fit": true,
+        "covered_intersect_test_zero": true,
+        "fit_intersect_test_zero": true,
+        "dev_intersect_test_zero": true,
+        "fit_intersect_dev_zero": true,
+        "cs_caveat_not_in_dev": true,
+        "provenance_clean": true
+      },
+      "PASS": true
+    },
+    "shopping_assistant": {
+      "n_fit": 70,
+      "n_dev": 30,
+      "n_test": 50,
+      "n_covered_unique": 46,
+      "covered_not_in_fit": [],
+      "covered_intersect_test": [],
+      "fit_intersect_test": [],
+      "dev_intersect_test": [],
+      "fit_intersect_dev": [],
+      "cs_caveat_leak_in_dev": [],
+      "provenance": {
+        "learner": "compliant_forge",
+        "input_boundary": "datasets/train_task_trajectories/ only (conversation + tool calls)",
+        "ground_truth_used": false,
+        "labels_used": false,
+        "extraction": "deterministic (no LLM); policy branches surfaced from get_policies env docs",
+        "n_train_demos": 70,
+        "n_families": 8,
+        "split": "train_fit only (dev held out)",
+        "n_train_fit_demos": 70,
+        "artifact": "compliant_forge_v3"
+      },
+      "checks": {
+        "covered_subset_of_fit": true,
+        "covered_intersect_test_zero": true,
+        "fit_intersect_test_zero": true,
+        "dev_intersect_test_zero": true,
+        "fit_intersect_dev_zero": true,
+        "cs_caveat_not_in_dev": true,
+        "provenance_clean": true
+      },
+      "PASS": true
+    }
+  },
+  "overall": {
+    "all_domains_pass": true
+  }
+}
